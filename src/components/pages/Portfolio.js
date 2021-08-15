@@ -1,84 +1,180 @@
-import React from 'react';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import {
+  Card,
+  Button,
+  CardImg,
+  CardTitle,
+  CardText,
+  CardColumns,
+  CardSubtitle,
+  CardBody,
+  CardImgOverlay
+} from "reactstrap";
 
-export default function Portfolio() {
+const Portfolio = (props) => {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <div id="worktitle" class="worktitle">
-        <div class="worktitile">
-          <h3>Work:</h3>
-        </div>
+    <Container>
+      <Row>
+        <Col> Portfolio: </Col>
+      </Row>
 
-        <div class="work">
-          <div class="col1">
-            <figure>
-              <figcaption>
-                <p> Team Profile Generator </p>
-              </figcaption>
-              <p><a href="https://tewol.github.io/10-team-profile-generator-oop/output/"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/teamprofile.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="https://github.com/Tewol/10-team-profile-generator-oop"> <i class="fa fa-github"></i> Profile Generator </a>
-            </figure>
+      <Row>
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardImgOverlay body className="ml-5">
+                <CardTitle tag="h5">Team Profile Generator</CardTitle>
+              </CardImgOverlay>
+              <a href="https://tewol.github.io/10-team-profile-generator-oop/output/">
+                <CardImg
+                  top width="100%"
+                  src="/assets/fullstack.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="https://github.com/Tewol/10-team-profile-generator-oop">
+                  {" "}
+                  <i class="fa fa-github"></i> Profile Generator{" "}
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
 
-            <figure>
-              <figcaption>
-                <p> Project 1 - Actor Database </p>
-              </figcaption>
-              <p><a href="https://m-ray-ofsunshine.github.io/actor-database/"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/proj1.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="https://github.com/m-ray-ofSunshine/actor-database"> <i class="fa fa-github"></i> Actor Database </a>
-            </figure>
-            
-          </div>
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5">Ecommerce</CardTitle>
 
-          <div class="col2">
-            <figure>
-              <figcaption>
-                <p> Ecommerce</p>
-              </figcaption>
-              <p><a href="https://app.scre.io/#/my-videos/1"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/ecommerce.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="https://github.com/Tewol/13-ecommerce-orm"> <i class="fa fa-github"></i>  Ecommerce</a>
-            </figure>
-            
-            <figure>
-              <figcaption>
-                <p> Project 2 - Railway Express </p>
-              </figcaption>
-              <p><a href="https://aqueous-fortress-46074.herokuapp.com/"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/proj2.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="https://github.com/zacharyjg00/Railway-Express"> <i class="fa fa-github"></i>  Railway Express </a>
-            </figure>
-          </div>
+              <a href="https://app.scre.io/#/my-videos/1">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/images/ecommerce.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="https://github.com/Tewol/13-ecommerce-orm">
+                  {" "}
+                  <i class="fa fa-github"></i> Ecommerce{" "}
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
 
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5"> Employee Managment System </CardTitle>
+              <a href=" https://github.com/Tewol/12-employee-tracker-mysql/blob/main/images/employee_Tracker.gif">
+                <CardImg
+                  top
+                  width="/assets/images/employee.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="https://github.com/Tewol/12-employee-tracker-mysql">
+                  {" "}
+                  <i class="fa fa-github"></i> Employee Mgnt System
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
 
-          <div class="col3">
-            <figure>
-              <figcaption>
-                <p> Employee Managment System</p>
-              </figcaption>
-              <p><a href=" https://github.com/Tewol/12-employee-tracker-mysql/blob/main/images/employee_Tracker.gif"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/employee.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="https://github.com/Tewol/12-employee-tracker-mysql"> <i class="fa fa-github"></i>  Employee Mgnt System</a>
-            </figure>
-            <figure>
-              <figcaption>
-                <p> Project 3 - Final Project </p>
-              </figcaption>
-              <p><a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png"><img
-                    src="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png" class="projects" height="130"
-                    width="250"></a>
-              </p><a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png"> <i class="fa fa-github"></i> Coming soon </a>
-            </figure>
-          </div>
+      <Row>
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5"> Project 1 - Actor Database </CardTitle>
+              <a href="https://m-ray-ofsunshine.github.io/actor-database/">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/images/proj1-js-api.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="https://github.com/m-ray-ofSunshine/actor-database">
+                  {" "}
+                  <i class="fa fa-github"></i> Actor Database{" "}
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
 
-        </div>
-    </div>
-    </div>
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5"> Project 2 - Railway Express </CardTitle>
+              <a href="https://aqueous-fortress-46074.herokuapp.com/">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/images/proj2.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="https://github.com/zacharyjg00/Railway-Express">
+                  {" "}
+                  <i class="fa fa-github"></i> Railway Express{" "}
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
+
+        <Col xs="6" sm="4">
+          <Card>
+            <CardBody>
+              <CardTitle tag="h5"> Project 3 - Final Project </CardTitle>
+              <a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/assets/images/comingsoon.png"
+                  class="projects"
+                  height="130"
+                  width="250"
+                  alt="Card image cap"
+                />
+              </a>
+              <CardText>
+                <a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png">
+                  {" "}
+                  <i class="fa fa-github"></i> Coming soon{" "}
+                </a>
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
+
+export default Portfolio;
