@@ -1,21 +1,26 @@
-import React from 'react';
 
-export default function Home() {
+import React from 'react';
+import { Media } from 'reactstrap';
+
+const About = () => {
   return (
-    <div>
-      <h1>Welcome</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
+    <Media>
+      <Media left href="#">
+        <Media object data-src="holder.js/64x64" alt="myPic" />
+      </Media>
+      <Media body>
+        <Media heading>
+        About Me:
+        </Media>
+          Hello there!
+
+          My name is Hewan Redie. I was born and raised in Ethiopia and moved to the US 10 years ago.
+
+          I am currently attending University of Minnesota's Boot Camp program.
+      </Media>
+    </Media>
+    
   );
-}
+};
+
+export default About;

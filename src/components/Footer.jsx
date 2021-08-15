@@ -1,39 +1,42 @@
-// import React, { Component } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { Component } from "react";
+import { Nav, NavItem, NavLink } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
+class Footer extends Component {
+  render() {
+    return (
+      <div className="footer">
+        <Nav className="social">
+          <NavItem>
+            <NavLink href="mailto:tewol22@gmail.com"> Email
+              <i class="fa fa-envelope"></i>
+            </NavLink>
+          </NavItem>
 
-// class Footer extends Component {
-//   render() { 
-//     return ( 
-//       <div>
-//         <h1> Footer</h1>
-//         <ul>
-//           <li>
-//             <a href="mailto:tewol22@gmail.com"><i class="fa fa-envelope"></i> 
+          <NavItem>
+            <NavLink href="tel:651.621.0392"> Phone
+              <i class="fa fa-phone"></i>
+            </NavLink>
+          </NavItem>
 
-//             </a>
-//           </li>
-          
-//           <li>
-//             <a href="tel:651.621.0392"><i class="fa fa-phone"></i> 
+          <NavItem>
+            <NavLink href="https://github.com/Tewol"> GitHub
+              <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
+            </NavLink>
+          </NavItem>
 
-//             </a>
-//           </li>
-          
-//           <li>
-//             <a href="https://github.com/Tewol"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-//           </li>
+          <NavItem>
+            <NavLink href="https://www.linkedin.com/in/hewan-redie-b5751b89"> LinkedIn
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            </NavLink>
+          </NavItem>
+        </Nav>
 
-//           <li>
-//             <a href="https://www.linkedin.com/in/hewan-redie-b5751b89"><i class="fa fa-linkedin"></i> 
-            
-//             </a>
-//           </li>
-//         </ul>
-//       </div>
-//     );
-//   }
+        Copyright &copy; Hewan Redie
 
-// }
- 
-// export default Footer;
+      </div>
+    );
+  }
+}
+export default Footer;

@@ -1,24 +1,34 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
-const Link = (props) => {
+const Link = ({ currentPage, handlePageChange }) => {
   return (
-    <div>
-      <Nav>
+    <div className="NavBar">
+      <Nav className="nav nav-tabs"> 
         <NavItem>
-          <NavLink href="#">Portfolio</NavLink>
+          <NavLink className="LinkList" href="#"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
+            Portfolio
+          </NavLink>
+        </NavItem>
+
+        <NavItem className="nav-item">
+          <NavLink className="LinkList" href="#Contact" 
+            onClick={() => handlePageChange('Contact')}
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+            
+            Contact
+          
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <NavLink href="#">Contact</NavLink>
-        </NavItem>
-
-        <NavItem>
-          <NavLink href="#">Resume</NavLink>
-        </NavItem>
-
-        <NavItem>
-          <NavLink disabled href="#">Disabled Link</NavLink>
+          <NavLink className="LinkList" href="#"
+            onClick={() => handlePageChange('Resume')}
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+            Resume
+          </NavLink>
         </NavItem>
 
       </Nav>

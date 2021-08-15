@@ -29,7 +29,7 @@ const Portfolio = (props) => {
               <a href="https://tewol.github.io/10-team-profile-generator-oop/output/">
                 <CardImg
                   top width="100%"
-                  src="/assets/fullstack.png"
+                  src="/assets/background-image.png"
                   class="projects"
                   height="130"
                   width="250"
