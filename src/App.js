@@ -1,30 +1,44 @@
 
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import background from './assets/background-image.png';
+//import logo from './logo.svg';
+import { Navbar, NavbarBrand } from 'reactstrap';
+//import Menu from './components/Project';
+import Nav from './components/Nav';
+//import Example from './components/Example';
+import ContactForm from './components/pages/Contact';
+import Welcome from './components/Header';
+import AboutMe from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
 import './App.css';
 
+// constructor (props){
+//  super();
+//  this.state = {
+//  <Menu/>
+//  <Example/>
+//  <ContactForm/>
+//  <AboutMe/>
+//   }
+// }
 
-/*
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App" style={{ backgroundImage: `url (${background})` }}>
+        <Welcome/>
+        <Navbar style={{ backgroundImage: `linear-gradient(to right, rgba(23, 65, 52, 0.867), rgba(23, 65, 52, 0.867) 63%)`, borderColor: '#333' }}>
+          <div className="container">
+            <NavbarBrand href="/">Hewan Redie</NavbarBrand>
+            <Nav/>
+          </div>
+        </Navbar>
+        
+        <Portfolio/>
+        
+      </div>
+    );
+  }
 }
 
 export default App;
-*/
