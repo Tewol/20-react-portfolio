@@ -1,25 +1,24 @@
 
 import React from 'react';
-import { Media } from 'reactstrap';
+import { Container, Row, Col, CardImg} from 'reactstrap';
+import Profile from "../assets/Pic1.png";
 
 const About = () => {
   return (
-    <Media>
-      <Media left href="#">
-        <Media object data-src="holder.js/64x64" alt="myPic" />
-      </Media>
-      <Media body>
-        <Media heading>
-        About Me:
-        </Media>
+    <Container className="About">
+      <Row>      
+        <Col xs="8">
+          <p>About Me:</p> 
           Hello there!
-
           My name is Hewan Redie. I was born and raised in Ethiopia and moved to the US 10 years ago.
-
           I am currently attending University of Minnesota's Boot Camp program.
-      </Media>
-    </Media>
-    
+        </Col>
+
+        <Col xs="4">
+          <CardImg src={Profile} className="mypic" alt="myPic" />
+        </Col>
+      </Row>
+    </Container>    
   );
 };
 

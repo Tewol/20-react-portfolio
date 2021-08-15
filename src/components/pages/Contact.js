@@ -3,7 +3,7 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 const ContactForm = (props) => {
   return (
-    <Form>
+    <Form className="contact">
       <h3> Contact:</h3>
       <FormGroup>
         <Label for="name"> Name: </Label>

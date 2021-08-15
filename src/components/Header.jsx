@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
-import styles from '../App.css'; 
+//import styles from '../App.css'; 
 
 const Welcome = (props) => {
   return (

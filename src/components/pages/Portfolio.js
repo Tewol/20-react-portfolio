@@ -1,172 +1,149 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import TeamProfile from "../assets/teamprofile.png";
+import Ecommerce from "../assets/ecommerce.png";
+import Employee from "../assets/employee.png";
+import Proj1 from "../assets/proj1.png";
+import Proj2 from "../assets/proj2.png";
+import Proj3 from "../assets/comingsoon.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'reactstrap';
 import {
   Card,
-  Button,
   CardImg,
   CardTitle,
   CardText,
-  CardColumns,
-  CardSubtitle,
   CardBody,
-  CardImgOverlay
-} from "reactstrap";
+} from 'reactstrap';
+
+library.add(fab);
 
 const Portfolio = (props) => {
   return (
-    <Container>
+    <Container className ="Projects">
       <Row>
-        <Col> Portfolio: </Col>
+        <Col className ="Title"> Portfolio: </Col>
       </Row>
 
       <Row>
-        <Col xs="6" sm="4">
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
-              <CardImgOverlay body className="ml-5">
-                <CardTitle tag="h5">Team Profile Generator</CardTitle>
-              </CardImgOverlay>
+              <CardTitle tag="h5">Team Profile Generator</CardTitle>          
               <a href="https://tewol.github.io/10-team-profile-generator-oop/output/">
                 <CardImg
-                  top width="100%"
-                  src="/assets/background-image.png"
-                  class="projects"
+                  src={TeamProfile}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
               <CardText>
-                <a href="https://github.com/Tewol/10-team-profile-generator-oop">
-                  {" "}
-                  <i class="fa fa-github"></i> Profile Generator{" "}
+                <a href="https://github.com/Tewol/13-ecommerce-orm">
+                  <FontAwesomeIcon icon={["fab", "github"]} /> Team Profile
                 </a>
               </CardText>
             </CardBody>
           </Card>
         </Col>
 
-        <Col xs="6" sm="4">
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
               <CardTitle tag="h5">Ecommerce</CardTitle>
 
               <a href="https://app.scre.io/#/my-videos/1">
                 <CardImg
-                  top
-                  width="100%"
-                  src="/assets/images/ecommerce.png"
-                  class="projects"
+                  src={Ecommerce}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
               <CardText>
                 <a href="https://github.com/Tewol/13-ecommerce-orm">
-                  {" "}
-                  <i class="fa fa-github"></i> Ecommerce{" "}
+                <FontAwesomeIcon icon={["fab", "github"]} /> Ecommerce
                 </a>
               </CardText>
             </CardBody>
           </Card>
         </Col>
 
-        <Col xs="6" sm="4">
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
               <CardTitle tag="h5"> Employee Managment System </CardTitle>
               <a href=" https://github.com/Tewol/12-employee-tracker-mysql/blob/main/images/employee_Tracker.gif">
                 <CardImg
-                  top
-                  width="/assets/images/employee.png"
-                  class="projects"
+                  src={Employee}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
               <CardText>
                 <a href="https://github.com/Tewol/12-employee-tracker-mysql">
-                  {" "}
-                  <i class="fa fa-github"></i> Employee Mgnt System
+                <FontAwesomeIcon icon={["fab", "github"]} /> Employee Mgnt System
                 </a>
               </CardText>
             </CardBody>
           </Card>
         </Col>
-      </Row>
-
-      <Row>
-        <Col xs="6" sm="4">
+        
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
               <CardTitle tag="h5"> Project 1 - Actor Database </CardTitle>
               <a href="https://m-ray-ofsunshine.github.io/actor-database/">
                 <CardImg
-                  top
-                  width="100%"
-                  src="/assets/images/proj1-js-api.png"
-                  class="projects"
+                  src={Proj1}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
               <CardText>
                 <a href="https://github.com/m-ray-ofSunshine/actor-database">
-                  {" "}
-                  <i class="fa fa-github"></i> Actor Database{" "}
+                <FontAwesomeIcon icon={["fab", "github"]} /> Actor Database
                 </a>
               </CardText>
             </CardBody>
           </Card>
         </Col>
 
-        <Col xs="6" sm="4">
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
               <CardTitle tag="h5"> Project 2 - Railway Express </CardTitle>
               <a href="https://aqueous-fortress-46074.herokuapp.com/">
                 <CardImg
-                  top
-                  width="100%"
-                  src="/assets/images/proj2.png"
-                  class="projects"
+                  src={Proj2}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
               <CardText>
-                <a href="https://github.com/zacharyjg00/Railway-Express">
-                  {" "}
-                  <i class="fa fa-github"></i> Railway Express{" "}
+                <a href="https://github.com/Tewol/Railway-Express">
+                <FontAwesomeIcon icon={["fab", "github"]} /> Railway Express
                 </a>
               </CardText>
             </CardBody>
           </Card>
         </Col>
 
-        <Col xs="6" sm="4">
+        <Col xs="12" sm="4">
           <Card>
             <CardBody>
               <CardTitle tag="h5"> Project 3 - Final Project </CardTitle>
-              <a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png">
+              <a href={Proj3}>
                 <CardImg
-                  top
-                  width="100%"
-                  src="/assets/images/comingsoon.png"
-                  class="projects"
+                  src={Proj3}
                   height="130"
                   width="250"
-                  alt="Card image cap"
                 />
               </a>
-              <CardText>
-                <a href="../hw2-portfolio-hewan-redie/assets/images/comingsoon.png">
-                  {" "}
-                  <i class="fa fa-github"></i> Coming soon{" "}
+              <CardText tag="h6">
+                <a href={Proj3}>
+                <FontAwesomeIcon icon={["fab", "github"]} /> Coming soon
                 </a>
               </CardText>
             </CardBody>
