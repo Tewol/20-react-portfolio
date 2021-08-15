@@ -1,7 +1,9 @@
 
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import background from './assets/background-image.png';
+//import background from './assets/background-image.png';
+
+
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Nav from './components/Nav';
 
@@ -17,7 +19,6 @@ class App extends Component {
   render() {
 
     // const [currentPage, setCurrentPage] = useState('Home');
-
     // const renderPage = () => {
     //   if (currentPage === 'About') {
     //     return <AboutMe />;
@@ -30,6 +31,10 @@ class App extends Component {
     //   }
     // };
 
+    // <About/>
+    // <Portfolio/>
+    // <ContactForm/>
+
     return (
       <div className="App">
         <Welcome/>
@@ -41,20 +46,11 @@ class App extends Component {
           </div>
         </Navbar>
 
-        <About/>
-        <Portfolio/>
-        <ContactForm/>
-
+          <ContactForm/>
+     
         <Footer/>
       </div>
-
-      
     );
-
-    
-    
-
-    
   }
 }
 
