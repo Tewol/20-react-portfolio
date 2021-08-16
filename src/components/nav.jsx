@@ -1,38 +1,31 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
-const Link = ({ currentPage, handlePageChange }) => {
+const HeaderNav = () => {
   return (
     <div className="NavBar">
       <Nav className="nav nav-tabs">
 
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="#About"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+          <NavLink className="LinkList" href="/About">
             About
           </NavLink>
         </NavItem> 
 
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="#Portfolio"
-            onClick={() => handlePageChange('Portfolio')}>
+          <NavLink className="LinkList" href="/Portfolio">
             Portfolio
           </NavLink>
         </NavItem>
 
-
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="#Contact" 
-            onClick={() => handlePageChange('Contact')}>
+          <NavLink className="LinkList" href="/Contact">
             Contact
           </NavLink>
         </NavItem>
 
-
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="#Resume"
-            onClick={() => handlePageChange('Resume')}>
+          <NavLink className="LinkList" href="/Resume">
             Resume
           </NavLink>
         </NavItem>
@@ -42,4 +35,4 @@ const Link = ({ currentPage, handlePageChange }) => {
   );
 }
 
-export default Link;
+export default HeaderNav;

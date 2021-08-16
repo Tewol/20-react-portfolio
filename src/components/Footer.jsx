@@ -13,30 +13,30 @@ class Footer extends Component {
         <Nav className="social">
           <NavItem>
             <NavLink href="mailto:tewol22@gmail.com"> 
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} size="2x"/>
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink href="tel:651.621.0392"> 
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon icon={faPhone} size="2x"/>
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink href="https://github.com/Tewol">
-              <FontAwesomeIcon icon={["fab", "github"]} />
+              <FontAwesomeIcon icon={["fab", "github"]} size="2x"/>
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink href="https://www.linkedin.com/in/hewan-redie-b5751b89">
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
             </NavLink>
           </NavItem>
         </Nav>
 
-        Copyright &copy; Hewan Redie
+        <h4> Copyright &copy; Hewan Redie </h4>
 
       </div>
     );

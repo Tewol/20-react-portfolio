@@ -25,16 +25,16 @@
 .LinkList{
   color: rgb(255, 255, 255);
   font-weight: bold;
-  border-right: 1px solid rgb(85, 30, 73);
+  border-right: 1px solid white;
   font-size: 1.2rem;
   
 }
 
 .App {
   text-align: center;
-  /*background-image: url('./assets/background-image.png');*/
+  background-image: url('./components/assets/background-image.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 115% 100%;
 }
 
 .Title{
@@ -115,5 +115,9 @@ button {
   width: 100%;
   padding: 40px;
   justify-content: space-evenly;
+}
+
+.footer h4{
   color: white;
 }
+
