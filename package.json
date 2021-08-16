@@ -2,7 +2,7 @@
   "name": "20-react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tewol.github.io/20-react-portfolio",
+  "homepage": "https://tewol.github.io/20-react-portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",

@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import background from './components/assets/background-image.png';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import HeaderNav from './components/Nav';
 import Welcome from './components/Header';
@@ -16,7 +16,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
       <div className="App">
         <Welcome/>
         <Navbar style={{ backgroundImage: `linear-gradient(to right, rgb(66, 87, 79), rgba(23, 65, 52, 0.867) 63%)`}}>
@@ -36,7 +36,7 @@ class App extends Component {
      
         <Footer/>
       </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
