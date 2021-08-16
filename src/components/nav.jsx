@@ -13,21 +13,21 @@ const HeaderNav = () => {
         </NavItem> 
 
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="/portfolio">
+          <Link className="LinkList" to="/portfolio">
             Portfolio
-          </NavLink>
+          </Link>
         </NavItem>
 
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="/contact">
+          <Link className="LinkList" to="/contact">
             Contact
-          </NavLink>
+          </Link>
         </NavItem>
 
         <NavItem className="nav-item">
-          <NavLink className="LinkList" href="/resume">
+          <Link className="LinkList" to="/resume">
             Resume
-          </NavLink>
+          </Link>
         </NavItem>
       </Nav>
     </div>
