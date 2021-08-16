@@ -25,13 +25,13 @@ class App extends Component {
             <HeaderNav/>
           </div>
         </Navbar>
-       
+
         <Switch>
-            <Route path="/" component={About} exact/>
-            <Route path="/about" component={About}/>
-            <Route path="/portfolio" component={Portfolio} exact/>
-            <Route path="/contact" component={ContactForm}/>
-            <Route path="/resume" component={Resume}/>  
+          <Route path="/" component={About} exact/>
+          <Route path="/about" component={About}/>
+          <Route path="/portfolio" component={Portfolio} exact/>
+          <Route path="/contact" component={ContactForm} exact/>
+          <Route path="/resume" component={Resume} exact/>  
         </Switch>
      
         <Footer/>

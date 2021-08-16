@@ -30,7 +30,7 @@ const Portfolio = (props) => {
 
       <Row>
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5">Team Profile Generator</CardTitle>          
               <a href="https://tewol.github.io/10-team-profile-generator-oop/output/">
@@ -50,7 +50,7 @@ const Portfolio = (props) => {
         </Col>
 
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5">Ecommerce</CardTitle>
 
@@ -71,7 +71,7 @@ const Portfolio = (props) => {
         </Col>
 
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5"> Employee Managment System </CardTitle>
               <a href=" https://github.com/Tewol/12-employee-tracker-mysql/blob/main/images/employee_Tracker.gif">
@@ -91,7 +91,7 @@ const Portfolio = (props) => {
         </Col>
         
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5"> Project 1 - Actor Database </CardTitle>
               <a href="https://m-ray-ofsunshine.github.io/actor-database/">
@@ -111,7 +111,7 @@ const Portfolio = (props) => {
         </Col>
 
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5"> Project 2 - Railway Express </CardTitle>
               <a href="https://aqueous-fortress-46074.herokuapp.com/">
@@ -131,7 +131,7 @@ const Portfolio = (props) => {
         </Col>
 
         <Col xs="12" sm="4">
-          <Card>
+          <Card className="projectCard">
             <CardBody>
               <CardTitle tag="h5"> Project 3 - Final Project </CardTitle>
               <a href={Proj3}>
