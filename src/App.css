@@ -31,9 +31,9 @@
 }
 
 .active{
-  background-color: green;
-  color: rgb(161, 31, 31);
-  
+  color: rgb(57, 15, 48);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .App {

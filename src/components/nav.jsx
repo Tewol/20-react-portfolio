@@ -1,24 +1,24 @@
 import React from 'react';
 import { Nav } from 'reactstrap';
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const HeaderNav = () => {
   
   return (
     <div className="NavBar">
       <Nav >
-        <NavLink className="LinkList" activeClassName="active" to="/about" activeClassName="active">
+        <NavLink className="LinkList" activeClassName="active" to="/about">
           About
         </NavLink>
-        <Link className="LinkList" to="/portfolio">
+        <NavLink className="LinkList" activeClassName="active" to="/portfolio">
           Portfolio
-        </Link>
-        <Link className="LinkList" to="/contact" activeClassName="active">
+        </NavLink>
+        <NavLink className="LinkList" activeClassName="active" to="/contact">
           Contact
-        </Link>
-        <Link className="LinkList" to="/resume">
+        </NavLink>
+        <NavLink className="LinkList" activeClassName="active" to="/resume">
           Resume
-        </Link>
+        </NavLink>
       </Nav>
 
      
