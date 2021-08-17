@@ -3,7 +3,6 @@ import { Nav } from 'reactstrap';
 import { NavLink } from "react-router-dom"
 
 const HeaderNav = () => {
-  
   return (
     <div className="NavBar">
       <Nav >
@@ -20,8 +19,6 @@ const HeaderNav = () => {
           Resume
         </NavLink>
       </Nav>
-
-     
     </div>
   );
 }

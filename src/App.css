@@ -16,7 +16,6 @@
   color: white;
 }
 
-
 .LinkList {
   color: white;
   padding: 0px 10px 0px 10px;
@@ -88,7 +87,6 @@
 h3{
   font-size: 2.5rem;
   text-align: center;
-  
 }
 
 .contact{
@@ -98,7 +96,6 @@ h3{
   width: 70%;
   font-size: 1.25rem;
   text-align: left;
-  
 }
 
 Label{
@@ -124,8 +121,8 @@ input{
 }
 
 Button {
+  margin-top: 40px;
   width: 20%;
-  margin-left: 40%;
 }
 
 .sub{
@@ -145,7 +142,6 @@ Button {
 .footer h4{
   color: white;
 }
-
 
 @include media-breakpoint-up(sm) {
   html {
