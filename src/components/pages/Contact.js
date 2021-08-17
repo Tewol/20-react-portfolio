@@ -5,22 +5,33 @@ const ContactForm = (props) => {
   return (
     <Form className="contact">
       <h3> Contact:</h3>
-      <FormGroup>
-        <Label for="name"> Name: </Label>
-        <Input />
+      <FormGroup className="label">
+        <Label for="name"> Full Name: </Label>
+        <Input 
+          type="full-name"
+          name="name"
+          id="name"
+          placeholder="Hewan Redie"/>
       </FormGroup>
 
       <FormGroup>
         <Label for="email"> Email Address: </Label>
-        <Input />
+        <Input 
+          type="email"
+          name="email"
+          id="exampleEmail"
+          placeholder="example@example.com"/>
       </FormGroup>
 
       <FormGroup>
         <Label for="message"> Message: </Label>
-        <Input type="textarea" name="comment" id="message" />
+        <Input 
+          type="textarea" 
+          name="comment" 
+          id="message"/>
       </FormGroup>
 
-      <Button>Submit</Button>
+      <Button className="sub"> Submit </Button>
 
     </Form>
   );

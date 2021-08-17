@@ -13,18 +13,27 @@
 
 .Name{
   font-size: 2rem;
-  color: white
+  color: white;
 }
 
-.NavBar{
-  padding: 15px;
-}
 
-.LinkList{
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+.LinkList {
+  color: white;
+  padding: 0px 10px 0px 10px;
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: right; 
+  list-style-type: none;
   border-right: 1px solid white;
-  font-size: 1.2rem;
+  font-size:1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active{
+  background-color: green;
+  color: rgb(161, 31, 31);
+  
 }
 
 .App {
@@ -78,6 +87,7 @@
 
 h3{
   font-size: 2.5rem;
+  text-align: center;
   
 }
 
@@ -87,6 +97,7 @@ h3{
   padding-bottom: 400px;
   width: 70%;
   font-size: 1.25rem;
+  text-align: left;
   
 }
 
@@ -107,15 +118,20 @@ input{
   color: #1a1a1a;
   background-color: #ffffff;
   margin: 0.625rem 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border: 1px solid #484848;
   border-radius: 0.8rem;
 }
 
-button {
-  width: 70%;
+Button {
+  width: 20%;
+  margin-left: 40%;
 }
 
+.sub{
+  background-color: rgb(57, 15, 48);
+  font-size: 1.5rem;
+}
 
 .footer {
   background-color: rgb(66, 87, 79);
@@ -124,9 +140,27 @@ button {
   left: 0;
   width: 100%;
   padding: 40px;
-  justify-content: space-evenly;
 }
 
 .footer h4{
   color: white;
+}
+
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
 }

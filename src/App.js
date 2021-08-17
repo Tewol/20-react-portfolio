@@ -21,14 +21,14 @@ class App extends Component {
         <Welcome/>
         <Navbar style={{ backgroundImage: `linear-gradient(to right, rgb(66, 87, 79), rgba(23, 65, 52, 0.867) 63%)`}}>
           <div className="container">
-            <NavbarBrand className="Name" href="/">Hewan Redie</NavbarBrand>
+            <NavbarBrand className="Name" href="/about">Hewan Redie</NavbarBrand>
             <HeaderNav/>
           </div>
         </Navbar>
 
         <Switch>
           <Route path="/" component={About} exact/>
-          <Route path="/about" component={About}/>
+          <Route path="/about" component={About} exact/>
           <Route path="/portfolio" component={Portfolio} exact/>
           <Route path="/contact" component={ContactForm} exact/>
           <Route path="/resume" component={Resume} exact/>  

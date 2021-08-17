@@ -34,6 +34,12 @@ class Footer extends Component {
               <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
             </NavLink>
           </NavItem>
+
+          <NavItem>
+            <NavLink href="https://stackoverflow.com/users/16101184/hewan-redie">
+              <FontAwesomeIcon icon={['fab', 'stack-overflow']} size="2x"/>
+            </NavLink>
+          </NavItem>
         </Nav>
 
         <h4> Copyright &copy; Hewan Redie </h4>
