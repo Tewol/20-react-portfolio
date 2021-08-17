@@ -1,24 +1,29 @@
-import {React, useState, etNumPages} from 'react';
+import React, {Component} from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import Pdf from '../assets/resume.pdf'
-import { Document, Page } from 'react-pdf';
 
-function Resume() {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  
-  function onDocumentLoadSuccess({ numPages }) {
-    etNumPages(numPages);
+class Resume extends Component {
+  state = {
+    numPages: 2,
+    pageNumber: 1,
   }
-
-  return (
-    <div>
-      <Document file={Pdf}
-        onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
-      </Document>
-   
-    </div>
-  );
+  render() {
+    const { pageNumber, numPages } = this.state;
+    return (
+      <div>
+        <div id='contentDiv'>
+          <Document
+            file={Pdf}
+            onLoadSuccess={this.onDocumentLoad}>
+              {[1, 2].map(page => (
+                <Page pageNumber={page} />
+            ))}
+          </Document>
+          <p>Page {pageNumber} of {numPages}</p>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Resume;

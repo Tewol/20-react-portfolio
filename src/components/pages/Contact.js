@@ -28,10 +28,7 @@ const ContactForm = (props) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
-
+    
     if (!validateEmail(email)) {
       setErrorMessage('Invalid Email');
       return;
