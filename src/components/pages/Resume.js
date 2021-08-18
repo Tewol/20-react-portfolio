@@ -1,27 +1,36 @@
-import React, {Component} from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import Pdf from '../assets/resume.pdf'
+import React, { Component } from "react";
+import resumePdf from "../assets/resume.pdf";
+import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
   state = {
+    file: resumePdf,
     numPages: 2,
     pageNumber: 1,
-  }
+  };
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  };
+
   render() {
-    const { pageNumber, numPages } = this.state;
+    const { file, numPages, pageNumber } = this.state;
     return (
-      <div>
-        <div id='contentDiv'>
-          <Document
-            file={Pdf}
-            onLoadSuccess={this.onDocumentLoadSuccess}>
-              
-              {[1, 2].map(page => (
-                <Page pageNumber={page} />
-            ))}
-          </Document>
-          <p>Page {pageNumber} of {numPages}</p>
-        </div>
+      <div id="Container">
+        <Document
+          className={"Document"}
+          file={file}
+          onLoadSuccess={this.onDocumentLoadSuccess}>
+
+          {[1, 2].map((page) => (
+            <Page pageNumber={page} renderTextLayer={false} />
+          ))}
+          
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
       </div>
     );
   }

@@ -10,7 +10,6 @@ import About from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import ContactForm from './components/pages/Contact';
 import Resume from './components/pages/Resume';
-import Example from './components/pages/Example';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -33,7 +32,6 @@ class App extends Component {
           <Route path="/portfolio" component={Portfolio} exact/>
           <Route path="/Contact" component={ContactForm} exact/>
           <Route path="/resume" component={Resume} exact/>  
-          <Route path="/example" component={Example} exact/> 
         </Switch>
      
         <Footer/>

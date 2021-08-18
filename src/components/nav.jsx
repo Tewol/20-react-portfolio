@@ -18,9 +18,6 @@ const HeaderNav = () => {
         <NavLink className="LinkList" activeClassName="active" to="/resume">
           Resume
         </NavLink>
-        <NavLink className="LinkList" activeClassName="active" to="/example">
-          Resume
-        </NavLink>
       </Nav>
     </div>
   );
