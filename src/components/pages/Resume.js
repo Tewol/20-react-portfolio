@@ -14,7 +14,8 @@ class Resume extends Component {
         <div id='contentDiv'>
           <Document
             file={Pdf}
-            onLoadSuccess={this.onDocumentLoad}>
+            onLoadSuccess={this.onDocumentLoadSuccess}>
+              
               {[1, 2].map(page => (
                 <Page pageNumber={page} />
             ))}
