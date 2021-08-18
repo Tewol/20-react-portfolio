@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/20-react-portfolio/static/css/main.84fffdc1.chunk.css",
-    "main.js": "/20-react-portfolio/static/js/main.d6069cd6.chunk.js",
-    "main.js.map": "/20-react-portfolio/static/js/main.d6069cd6.chunk.js.map",
+    "main.js": "/20-react-portfolio/static/js/main.46146525.chunk.js",
+    "main.js.map": "/20-react-portfolio/static/js/main.46146525.chunk.js.map",
     "runtime-main.js": "/20-react-portfolio/static/js/runtime-main.13dd08f8.js",
     "runtime-main.js.map": "/20-react-portfolio/static/js/runtime-main.13dd08f8.js.map",
     "static/css/2.818011ed.chunk.css": "/20-react-portfolio/static/css/2.818011ed.chunk.css",
-    "static/js/2.a6462e3f.chunk.js": "/20-react-portfolio/static/js/2.a6462e3f.chunk.js",
-    "static/js/2.a6462e3f.chunk.js.map": "/20-react-portfolio/static/js/2.a6462e3f.chunk.js.map",
+    "static/js/2.bed346dc.chunk.js": "/20-react-portfolio/static/js/2.bed346dc.chunk.js",
+    "static/js/2.bed346dc.chunk.js.map": "/20-react-portfolio/static/js/2.bed346dc.chunk.js.map",
     "1b16a08776dd23adaa992599598f1a2b.js": "/20-react-portfolio/1b16a08776dd23adaa992599598f1a2b.js",
     "1b16a08776dd23adaa992599598f1a2b.js.LICENSE.txt": "/20-react-portfolio/1b16a08776dd23adaa992599598f1a2b.js.LICENSE.txt",
     "index.html": "/20-react-portfolio/index.html",
     "static/css/2.818011ed.chunk.css.map": "/20-react-portfolio/static/css/2.818011ed.chunk.css.map",
     "static/css/main.84fffdc1.chunk.css.map": "/20-react-portfolio/static/css/main.84fffdc1.chunk.css.map",
-    "static/js/2.a6462e3f.chunk.js.LICENSE.txt": "/20-react-portfolio/static/js/2.a6462e3f.chunk.js.LICENSE.txt",
+    "static/js/2.bed346dc.chunk.js.LICENSE.txt": "/20-react-portfolio/static/js/2.bed346dc.chunk.js.LICENSE.txt",
     "static/media/Pic1.782e1f88.png": "/20-react-portfolio/static/media/Pic1.782e1f88.png",
     "static/media/App.css": "/20-react-portfolio/static/media/background-image.4eaa60f5.png",
     "static/media/comingsoon.9f812320.png": "/20-react-portfolio/static/media/comingsoon.9f812320.png",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.13dd08f8.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.a6462e3f.chunk.js",
+    "static/js/2.bed346dc.chunk.js",
     "static/css/main.84fffdc1.chunk.css",
-    "static/js/main.d6069cd6.chunk.js"
+    "static/js/main.46146525.chunk.js"
   ]
 }
