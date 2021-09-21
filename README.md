@@ -1,3 +1,20 @@
+# 20-react-portfolio
+
+* This is a my portfolio webpage
+
+## Links to the deployed application
+
+* URL of the deployed application: https://tewol.github.io/20-react-portfolio/#/
+
+* URL of the GitHub repository: https://github.com/Tewol/20-react-portfolio
+
+## Mock-Up portfolio
+
+The following image shows my portfolio appearance and functionality: 
+
+![My Profile](./public/profile.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +85,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+© 2021 Hewan Redie
