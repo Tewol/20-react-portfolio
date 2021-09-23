@@ -37,12 +37,12 @@ const ContactForm = (props) => {
   return (
     <Form className="contact">
       <div>
-        <h3> Contact:</h3>
+        <h3> Contact</h3>
+        <p>Have a question or want to work together? you can send me message here or email me direcly @ tewol22@gmail.com</p>
         <FormGroup className="label">
-          <Label for="name"> Full Name: </Label>
           <Input
             type="text"
-            placeholder="Hewan Redie"
+            placeholder="Full Name"
             value={fullName}
             onChange={handleInputChange}
             name="fullName"
@@ -50,11 +50,10 @@ const ContactForm = (props) => {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="email"> Email Address: </Label>
           <Input
             type="email"
             name="email"
-            placeholder="example@example.com"
+            placeholder="Email Address"
             value={email}
             onChange={handleInputChange}
             onSubmit={handleFormSubmit}
@@ -62,10 +61,10 @@ const ContactForm = (props) => {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="message"> Message: </Label>
           <Input
             type="textarea"
             name="comment"
+            placeholder="Message"
             value={message}
             onChange={handleInputChange}
             required

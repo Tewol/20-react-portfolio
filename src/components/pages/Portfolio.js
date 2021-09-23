@@ -4,7 +4,7 @@ import Ecommerce from "../assets/ecommerce.png";
 import Employee from "../assets/employee.png";
 import Proj1 from "../assets/proj1.png";
 import Proj2 from "../assets/proj2.png";
-import Proj3 from "../assets/comingsoon.png";
+import Proj3 from "../assets/proj3.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -25,7 +25,9 @@ const Portfolio = (props) => {
   return (
     <Container className ="Projects">
       <Row>
-        <Col className ="Title"> Portfolio: </Col>
+        <Col className ="Title"> 
+        Portfolio
+        </Col>
       </Row>
 
       <Row>
@@ -38,8 +40,13 @@ const Portfolio = (props) => {
                   src={TeamProfile}
                   height="130"
                   width="250"
-                />
+                /> 
               </a>
+              <p class="card-text"> A command-line application that takes in information about employees and generates summary of each person.</p>
+              <ul>
+             
+              </ul>
+              
               <CardText>
                 <a href="https://github.com/Tewol/13-ecommerce-orm">
                   <FontAwesomeIcon icon={["fab", "github"]} /> Team Profile
@@ -61,6 +68,7 @@ const Portfolio = (props) => {
                   width="250"
                 />
               </a>
+              <p class="card-text"> A back-end e-commerce site that uses the latest technologies to compete with other e-commerce companies.</p>
               <CardText>
                 <a href="https://github.com/Tewol/13-ecommerce-orm">
                 <FontAwesomeIcon icon={["fab", "github"]} /> Ecommerce
@@ -81,6 +89,7 @@ const Portfolio = (props) => {
                   width="250"
                 />
               </a>
+              <p>Employee tracker application that ables a user to view and manage the departments, roles, and employees.</p>
               <CardText>
                 <a href="https://github.com/Tewol/12-employee-tracker-mysql">
                 <FontAwesomeIcon icon={["fab", "github"]} /> Employee Mgnt System
@@ -93,7 +102,7 @@ const Portfolio = (props) => {
         <Col xs="12" sm="4">
           <Card className="projectCard">
             <CardBody>
-              <CardTitle tag="h5"> Project 1 - Actor Database </CardTitle>
+              <CardTitle tag="h5"> Actor Database </CardTitle>
               <a href="https://m-ray-ofsunshine.github.io/actor-database/">
                 <CardImg
                   src={Proj1}
@@ -101,6 +110,7 @@ const Portfolio = (props) => {
                   width="250"
                 />
               </a>
+              <p class="card-text"> A website that incorporates third party API to allow users search an actor/actress information using their name</p>
               <CardText>
                 <a href="https://github.com/m-ray-ofSunshine/actor-database">
                 <FontAwesomeIcon icon={["fab", "github"]} /> Actor Database
@@ -113,7 +123,7 @@ const Portfolio = (props) => {
         <Col xs="12" sm="4">
           <Card className="projectCard">
             <CardBody>
-              <CardTitle tag="h5"> Project 2 - Railway Express </CardTitle>
+              <CardTitle tag="h5"> Railway Express </CardTitle>
               <a href="https://aqueous-fortress-46074.herokuapp.com/">
                 <CardImg
                   src={Proj2}
@@ -121,6 +131,7 @@ const Portfolio = (props) => {
                   width="250"
                 />
               </a>
+              <p class="card-text">A railway reservation web app that allows a passenger to reserve a seat on one of many trains within Minnesota. As a passenger, they will be able to see other passengers aboard as well as the scheduled and current station. </p>
               <CardText>
                 <a href="https://github.com/Tewol/Railway-Express">
                 <FontAwesomeIcon icon={["fab", "github"]} /> Railway Express
@@ -133,7 +144,7 @@ const Portfolio = (props) => {
         <Col xs="12" sm="4">
           <Card className="projectCard">
             <CardBody>
-              <CardTitle tag="h5"> Project 3 - Final Project </CardTitle>
+              <CardTitle tag="h5"> Bark Avenue </CardTitle>
               <a href={Proj3}>
                 <CardImg
                   src={Proj3}
@@ -141,9 +152,10 @@ const Portfolio = (props) => {
                   width="250"
                 />
               </a>
+              <p class="card-text">Bark Avenue is a website built for a pet hotel using Reactjs where a user can sign up, log in, set their pets name, check out the services offered, select a service, book a reservation, and add it to the cart.</p>
               <CardText tag="h6">
                 <a href={Proj3}>
-                <FontAwesomeIcon icon={["fab", "github"]} /> Coming soon
+                <FontAwesomeIcon icon={["fab", "github"]} /> Bark Avenue
                 </a>
               </CardText>
             </CardBody>

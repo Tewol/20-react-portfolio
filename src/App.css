@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: 'Shadows Into Light', cursive;
-  color: rgb(57, 15, 48);
+  font-family: 'Marcellus SC', serif;
+  color: rgb(173, 173, 173);
 }
 
 .Welcome {
-  padding: 50px;
+  padding: 20px;
   font-weight: bold;
   text-align: center;
   font-size: 3.5rem;
@@ -13,11 +13,11 @@
 
 .Name{
   font-size: 2rem;
-  color: white;
+  color: #141414;
 }
 
 .LinkList {
-  color: white;
+  color: #141414;
   padding: 0px 10px 0px 10px;
   display: inline-flex;
   flex-direction:row;
@@ -30,14 +30,14 @@
 }
 
 .active{
-  color: rgb(57, 15, 48);
+  color: white;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .App {
   text-align: center;
-  background-image: url('./components/assets/background-image.png');
+  background-color:rgb(4, 4, 4);
   background-repeat: no-repeat;
   background-size: 115% 100%;
 }
@@ -47,14 +47,9 @@
   padding-bottom: 50px;
 }
 
-.About p{
-  padding-bottom: 50px;
-  font-size: 2.5rem;
-}
-
 .About{
   padding-top: 150px;
-  padding-bottom: 400px;
+  padding-bottom: 89px;
   font-size: 1.5rem;
 }
 
@@ -66,21 +61,27 @@
 } 
 
 .Projects{
-  padding-top: 150px;
-  padding-bottom: 400px;
+  padding-top: 50px;
+  padding-bottom: 27px;
   font-size: 1rem;
+}
+
+.Projects h4{
+
 }
 
 .projectCard{
   margin-bottom: 50px;
+  background-color:transparent;
+  border-radius: solid white;
 }
 
 .projectCard:hover {
   position:relative;
   top:-5px;
   left:-3px;
-  width:230px;
-  height:250px;
+  width:430px;
+  height:330px;
   display:block;
 }
 
@@ -92,7 +93,7 @@ h3{
 .contact{
   margin: 0% 10% 0% 15%;
   padding-top: 150px;
-  padding-bottom: 400px;
+  padding-bottom: 529px;
   width: 70%;
   font-size: 1.25rem;
   text-align: left;
@@ -111,8 +112,8 @@ Label{
 input{
   display: block;
   width: 100%;
-  padding: 0.75rem;
-  margin: 1rem 0;
+  padding: 1rem;
+  margin: 1.75rem 0;
   font-size: 1.5rem;
   border: 1px solid #484848;
   border-radius: 0.8rem;
@@ -124,21 +125,22 @@ Button {
 }
 
 .sub{
-  background-color: rgb(57, 15, 48);
   font-size: 1.5rem;
 }
 
+.Container{
+  text-align: center;
+  position: center;
+}
+
 .footer {
-  background-color: rgb(66, 87, 79);
-  position: fixed;
+  background-color:rgb(4, 4, 4);
+  position:relative;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 40px;
-}
-
-.footer h4{
-  color: white;
+  padding: 30px;
+  
 }
 
 @include media-breakpoint-up(sm) {

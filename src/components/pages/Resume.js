@@ -28,9 +28,9 @@ class Resume extends Component {
           ))}
           
         </Document>
-        <p>
+        {/* <p>
           Page {pageNumber} of {numPages}
-        </p>
+        </p> */}
       </div>
     );
   }

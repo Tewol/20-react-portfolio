@@ -8,10 +8,12 @@ const About = () => {
     <Container className="About">
       <Row>      
         <Col xs="12" sm="8">
-          <p>About Me:</p> 
-          Hello there!
-          My name is Hewan Redie. I was born and raised in Ethiopia and moved to the US 10 years ago. 
-          I am currently attending University of Minnesota's Boot Camp program.
+          <h2>Hello there!</h2>
+          <p>
+            My name is Hewan, a passionate full-stack developer with extensive background in various programming languages and frameworks. 
+            Specialized in JavaScript, jQuery, React, CSS, HTML5, Node.js, Express.js, SQL, NoSQL(MongoDB). 
+            Proficient in managing all aspects of the test life cycle in software development projects from 5+ years of experience in software testing.  
+          </p> 
         </Col>
 
         <Col xs="12" sm="4">

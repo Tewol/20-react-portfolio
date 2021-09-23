@@ -19,7 +19,7 @@ class App extends Component {
       <Router>
       <div className="App">
         <Welcome/>
-        <Navbar style={{ backgroundImage: `linear-gradient(to right, rgb(66, 87, 79), rgba(23, 65, 52, 0.867) 63%)`}}>
+        <Navbar style={{ backgroundImage: `linear-gradient(to right, rgb(238, 198, 67), rgb(238, 198, 67)`}}>
           <div className="container">
             <NavbarBrand className="Name" href="/about">Hewan Redie</NavbarBrand>
             <HeaderNav/>

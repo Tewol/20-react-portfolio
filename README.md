@@ -12,7 +12,7 @@
 
 The following image shows my portfolio appearance and functionality: 
 
-![My Profile](./public/profile.png)
+![My Profile](./src/components/assets/profile.png)
 
 
 # Getting Started with Create React App
