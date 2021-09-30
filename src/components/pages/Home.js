@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Container className="About">
       <Row>      
-        <Col xs="12" sm="7">
+        <Col sm="12" md="7">
           <h2>Hello there!</h2>
           <p>
             My name is Hewan, a passionate full-stack developer with extensive background in various programming languages and frameworks. 
@@ -16,7 +16,7 @@ const About = () => {
           </p> 
         </Col>
 
-        <Col xs="12" sm="5">
+        <Col sm="12" md="5">
           <CardImg src={Profile} className="mypic" alt="myPic" />
         </Col>
       </Row>

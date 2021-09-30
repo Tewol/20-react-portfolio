@@ -15,7 +15,7 @@ class Footer extends Component {
               <Nav className="justify-content-start">
                 <NavItem>
                   <NavLink href="mailto:tewol22@gmail.com">
-                    <h5> tewol22@gmail.com </h5>
+                    <h5> Email: tewol22@gmail.com </h5>
                   </NavLink>
                 </NavItem>
               </Nav>

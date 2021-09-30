@@ -31,7 +31,7 @@
 }
 
 .active{
-  color:chocolate;
+  color:#ff6d00;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -76,14 +76,12 @@
 }
 
 .projectCard:hover {
-  position:relative;
   top:-5px;
   left:-3px;
-  width:500px;
-  height:400px;
-  display:block;
-  border: relative solid chocolate;
-  border-radius: 50px;
+  width:550px;
+  height:650px;
+  /* border: solid #ebebeb;
+  border-radius: 50px; */
 }
 
 .project-img{
@@ -103,37 +101,8 @@ h4{
 
 .card-text{
   color: rgb(189, 183, 178);
-  margin: 20px;
+  margin: 15px;
   font-size: 1.25rem;
-}
-
-.contact{
-  margin: 0% 10% 0% 15%;
-  padding-top: 150px;
-  padding-bottom: 529px;
-  width: 70%;
-  font-size: 1.25rem;
-  text-align: left;
-}
-
-Label{
-  text-align:end;
-  font-size: 1.25rem;
-}
-
-#message{
-  padding: 100px;
-  margin-bottom: 50px;
-}
-
-input{
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  margin: 1.75rem 0;
-  font-size: 1.5rem;
-  border: 1px solid #484848;
-  border-radius: 0.8rem;
 }
 
 .tech-button {
@@ -141,11 +110,11 @@ input{
   list-style-type: none;
   width: 130px;
   margin-right: 5px;
-  border: 1px solid chocolate;
+  border: 0.1rem solid #ff6d00;
   border-radius: 50px;
   margin-top: 15px;
   font-size: 1rem;
-  color: rgb(210, 105, 30);
+  color:#ff6d00;
 }
 
 .tech-used{
@@ -154,7 +123,7 @@ input{
 
 .repo-link{
   font-size: 1.5rem;
-  color: chocolate;
+  color: #ff6d00;
 }
 
 .repo-link:hover{
@@ -162,32 +131,45 @@ input{
   color: rgb(252, 252, 252);
 }
 
+.contact{
+  margin: 0% 15% 0% 20%;
+  padding: 150px 0px 500px 0px;
+  width: 60%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.contact p{
+  text-align: center;
+}
+
+input{
+  margin: 1.75rem 0rem;
+  font-size: 1.5rem;
+  border: 1px solid #474747;
+}
+
 .sub{
   font-size: 1.5rem;
   width: 100%;
   margin-top: 20px;
   border-radius: 50px;
+  background-color: #474747;
 }
 
-.Container{
-  text-align: center;
-  position: center;
-}
 .Document{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 25%;
-
+  display: grid;
+  justify-items: center;
+  margin: 20px 0px 20px 0px;
 }
 
 .footer {
-  background-color:rgb(36, 36, 36);
+  background-color:#474747;
   position:relative;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 30px;
-  
 }
 
 @include media-breakpoint-up(sm) {
