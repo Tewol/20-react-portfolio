@@ -174,7 +174,10 @@ input{
   position: center;
 }
 .Document{
-  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+
 }
 
 .footer {
