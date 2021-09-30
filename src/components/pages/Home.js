@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { Container, Row, Col, CardImg} from 'reactstrap';
-import Profile from "../assets/Pic1.png";
+import Profile from "../assets/Pic1.avif";
 
 const About = () => {
   return (
     <Container className="About">
       <Row>      
-        <Col xs="12" sm="8">
+        <Col xs="12" sm="7">
           <h2>Hello there!</h2>
           <p>
             My name is Hewan, a passionate full-stack developer with extensive background in various programming languages and frameworks. 
@@ -16,7 +16,7 @@ const About = () => {
           </p> 
         </Col>
 
-        <Col xs="12" sm="4">
+        <Col xs="12" sm="5">
           <CardImg src={Profile} className="mypic" alt="myPic" />
         </Col>
       </Row>

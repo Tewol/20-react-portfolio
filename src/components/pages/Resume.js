@@ -15,7 +15,7 @@ class Resume extends Component {
   };
 
   render() {
-    const { file, numPages, pageNumber } = this.state;
+    const { file } = this.state;
     return (
       <div id="Container">
         <Document
@@ -26,11 +26,7 @@ class Resume extends Component {
           {[1, 2].map((page) => (
             <Page pageNumber={page} renderTextLayer={false} />
           ))}
-          
         </Document>
-        {/* <p>
-          Page {pageNumber} of {numPages}
-        </p> */}
       </div>
     );
   }

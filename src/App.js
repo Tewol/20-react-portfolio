@@ -1,7 +1,6 @@
 
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import background from './components/assets/background-image.png';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import HeaderNav from './components/Nav';
@@ -19,7 +18,7 @@ class App extends Component {
       <Router>
       <div className="App">
         <Welcome/>
-        <Navbar style={{ backgroundImage: `linear-gradient(to right, rgb(238, 198, 67), rgb(238, 198, 67)`}}>
+        <Navbar className="nav-container">
           <div className="container">
             <NavbarBrand className="Name" href="/about">Hewan Redie</NavbarBrand>
             <HeaderNav/>
