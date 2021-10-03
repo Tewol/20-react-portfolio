@@ -78,8 +78,8 @@
 .projectCard:hover {
   top:-5px;
   left:-3px;
-  width:550px;
-  height:650px;
+  /* width:550px;
+  height:650px; */
   /* border: solid #ebebeb;
   border-radius: 50px; */
 }
